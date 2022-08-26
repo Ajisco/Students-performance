@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Result</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{url_for('static', filename='assets/css/main.css')}}" />
+		<link  rel="icon" href="{{url_for('static', filename='images/icon.png')}}" />
+	</head>
+	<body style="font-family: sans-serif;" class="is-preload">
+
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div>
+						<center><h2 style="color: white;background-color: black;">CHECK PERFORMANCE RESULT</h2></center>
+
+					
+				</div>
+<br><br>
+										<div align='center'>
+
+											{%if data == "sufficient"%}
+											<header>
+												<h2>The student's average performance would be <span style="color: white; background-color: pink;">BELOW AVERAGE</span></h2>
+												
+											</header>
+
+											<br><br><span class="image featured"><img style="max-height: 20em; max-width: 20em;" src="{{url_for('static', filename='images/stdba1.webp')}}" alt="" /></span>
+
+											{%elif data == "fail"%}
+											<header>
+												<h2>The student's average performance would be <span style="color: white; background-color: red;"> VERY LOW</span></h2>
+												</header>
+
+											<br><br><span class="image featured"><img style="max-height: 25em; max-width: 25em;" src="{{url_for('static', filename='images/stdpoor1.webp')}}" alt="" /></span>
+
+											{%elif data == "satisfactory"%}
+											<header>
+												<h2>The student's average performance would be <span style="color: white; background-color: black;">AVERAGE</span></h2>
+												
+											</header>
+
+											<br><br><span class="image featured"><img style="max-height: 20em; max-width: 20em;" src="{{url_for('static', filename='images/stdavg.png')}}" alt="" /></span>
+
+											{%elif data == "good"%}
+												<header>
+												<h2>The student's average performance would be<span style="color: white; background-color: lightgreen;">ABOVE AVERAGE</span></h2>
+												
+											</header>
+
+											<br><br><span class="image featured"><img style="max-height: 20em; max-width: 20em;" src="{{url_for('static', filename='images/stdaa1.webp')}}" alt="" /></span>
+
+											{%else%}
+											<header>
+												<h2>The student's average performance would be <span style="color: white; background-color: green;">EXCELLENT</span></h2>
+												
+											</header>
+
+											<br><br><span class="image featured"><img style="max-height: 20em; max-width: 20em;" src="{{url_for('static', filename='images/stdex1.webp')}}" alt="" /></span>
+
+											{%endif%}
+                                         </div>
+
+                                         <div class="container">
+                                       <br><br> <h1>The most important factor that contributed to this prediction was: <span style="color: red;"> <b>{{col_msg[most]}}.</b></span></h1><br><b>Note:</b>This factor might have affected the result positively or negatively.
+
+                               <br><br> <h1>The other important factors (in order of importance) are:</h1> 
+                                    {%for i in next5%}
+                              <span style="color: green;">- {{col_msg[i]}}<br></span>
+                                   {%endfor%}
+
+                                  <hr/>
+                          <h1>General things to take note of (from analysis):</h1>
+                            1. The most important factor for students' failure is previously failed classes. <br>
+                          	2. Students should stop taking alcohol (in the weekdays or weekends) as it affects their performance significantly<br>
+                          	3. Parents should strengthen their relationships with their children.<br>
+                          	4. Children with educated parents tend to perform better.
+                          	<br>
+                          	5. Students who have their schools closer to home and those that have more free time perform better.<br>
+                          	6. Students that perform more extra curricular activities (school related) perform better.<br>
+                          	7. Students who have more family and educational support perform better.<br> <br><br>
+
+
+
+
+										</div>
+										<footer align='center'>
+												<a href="/" class="button">Go back to Home</a>
+											</footer>
+
+
+
+
+				
+
+			<!-- Main -->
+				
+					
+									<!-- Content -->
+
+
+			<!-- Footer -->
+				
+				<div id="footer">
+					
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; .</a> All rights reserved</li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static', filename='assets/js/jquery.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/jquery.dropotron.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/browser.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/breakpoints.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/util.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/main.js')}}"></script>
+
+	</body>
+</html>

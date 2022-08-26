@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Students Performance Predictor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{url_for('static', filename='assets/css/main.css')}}" />
+		<link  rel="icon" href="{{url_for('static', filename='images/icon.png')}}" />
+	</head>
+	<body class="is-preload" style="font-family: sans-serif; background-color: lightblue;">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header" class="container">
+
+					<!-- Logo -->
+						<div>
+						<center><h2 style="color: white;background-color: black;">STUDENTS PERFORMANCE PREDICTOR</h2></center>
+
+					
+			
+
+			<!-- Banner -->
+				<section class="wrapper style1" id="banner">
+					<div class="container"><header>
+						
+					</header></div>
+				</section>
+
+			<!-- Highlights -->
+		
+					<hr>
+				<!-- Gigantic Heading -->
+				<section class="wrapper style2" id="predict">
+					<div class="container">
+						<header class="major">
+							<h2 style="background-color: black; color: white;">Fill the form to predict performance </h2>
+
+							
+							
+						</header>
+					</div>
+					<section id="main" class="container medium">
+					
+					<div style="background-color: pink;" class="box">
+						<form style="position: relative; text-align: center;" method="POST" action="{{url_for('index')}}">
+							<div style="font-size: 15px;" class="row gtr-50 gtr-uniform">
+								<div class="arrow col-6 col-6-mobilep">
+								Sex</br>
+								<select name="sex" id="sex" required>
+									<option value=""> Choose </option>
+							        <option value="M">Male</option>
+							        <option value="F">Female</option>
+							    </select>
+								</div>
+								<div class="col-6 col-6-mobilep">
+								Age</br>
+									<input type="number" name="age" step="any" min="3" max="30" value="" placeholder=" 3 to 30 yrs" required/>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Address Setting</br>
+									
+							    <select name="address" id="address" required>
+							    	<option value=""> Choose </option>
+							        <option value="U">Urban</option>
+							        <option value="R">Rural</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Family Size</br>
+									
+							    <select name="famsize" id="famsize" required>
+							    	<option value=""> Choose </option>
+							        <option value="LE3">Less or equal to 3</option>
+							        <option value="GT3">More than 3</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Parents Condition</br>
+									
+							    <select name="Pstatus" id="Pstatus" required>
+							    	<option value=""> Choose </option>
+							        <option value="T">Living together</option>
+							        <option value="A">Apart</option>
+							    </select>
+								</div>
+
+								<div class="arrow col-6 col-6-mobilep">
+								Mother's Education</br>
+									
+							    <select name="Medu" id="Medu" required>
+							    	<option value=""> Choose </option>
+							        <option value="0">None</option>
+							        <option value="1">Primary Education (4th grade)</option>
+							        <option value="2">5th to 9th grade</option>
+							        <option value="3">Secondary Education</option>
+							        <option value="4">Higher Education</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Father's Education</br>
+									 <select name="Fedu" id="Fedu" required>
+							    	<option value=""> Choose </option>
+							        <option value="0">None</option>
+							        <option value="1">Primary Education (4th grade)</option>
+							        <option value="2">5th to 9th grade</option>
+							        <option value="3">Secondary Education</option>
+							        <option value="4">Higher Education</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Mother's job</br>
+									 <select name="Mjob" id="Mjob" required>
+							    	<option value=""> Choose </option>
+							        <option value="teacher">Teacher</option>
+							        <option value="health">Health related</option>
+							        <option value="services">Civil Services</option>
+							        <option value="other">Other</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Father's job</br>
+									 <select name="Fjob" id="Fjob" required>
+							    	<option value=""> Choose </option>
+							        <option value="teacher">Teacher</option>
+							        <option value="health">Health related</option>
+							        <option value="services">Civil Services</option>
+							        <option value="at_home">At home</option>
+							        <option value="other">Other</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Reason for school</br>
+									 <select name="reason" id="reason" required>
+							    	<option value=""> Choose </option>
+							        <option value="home">Close to home</option>
+							        <option value="reputation">School's reputation</option>
+							        <option value="course">Course preference</option>
+							        <option value="other">Other</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-12-mobilep">
+								Guardian</br>
+									 <select name="guardian" id="guardian" required>
+							    	<option value=""> Choose </option>
+							        <option value="mother">Mother</option>
+							        <option value="father">Father</option>
+							        <option value="other">Other</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-12-mobilep">
+								Home to school traveltime</br>
+									 <select name="traveltime" id="traveltime" required>
+							    	<option value=""> Choose </option>
+							        <option value="1">Less than 15 min</option>
+							        <option value="2">15 to 30 min</option>
+							        <option value="3">30 min to 1 hour</option>
+							        <option value="4">More than 1 hour</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Weekly study time</br>
+									 <select name="studytime" id="studytime" required>
+							    	<option value=""> Choose </option>
+							        <option value="1">Less than 2 hours</option>
+							        <option value="2">2 to 5 hours</option>
+							        <option value="3">5 to 10 hours</option>
+							        <option value="4">More than 10 hours</option>
+							    </select>
+								</div>
+								
+								<div class="arrow col-6 col-6-mobilep">
+								Past failed classes</br>
+										<select name="failures" id="failures" required>
+							    	<option value=""> Choose </option>
+							    	<option value="0">0</option>
+							        <option value="1">1</option>
+							        <option value="2">2</option>
+							        <option value="3">3</option>
+							        <option value="4">4</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-12-mobilep">
+								Extra Educational Support</br>
+									<select name="schoolsup" id="schoolsup" required>
+							    	<option value=""> Choose </option>
+							        <option value="yes">Yes</option>
+							        <option value="no">No</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-12-mobilep">
+								Family Educational Support</br>
+									<select name="famsup" id="famsup" required>
+							    	<option value=""> Choose </option>
+							        <option value="yes">Yes</option>
+							        <option value="no">No</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Extra paid classes</br>
+									<select name="paid" id="paid" required>
+							    	<option value=""> Choose </option>
+							        <option value="yes">Yes</option>
+							        <option value="no">No</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Extra Curricular Activities</br>
+									<select name="activities" id="activities" required>
+							    	<option value=""> Choose </option>
+							        <option value="yes">Yes</option>
+							        <option value="no">No</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Attended Nursery</br>
+									<select name="nursery" id="nursery" required>
+							    	<option value=""> Choose </option>
+							        <option value="yes">Yes</option>
+							        <option value="no">No</option>
+							    </select>
+								</div>
+
+								<div class="arrow col-6 col-6-mobilep">
+								Want higher education</br>
+									<select name="higher" id="higher" required>
+							    	<option value=""> Choose </option>
+							        <option value="yes">Yes</option>
+							        <option value="no">No</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-12-mobilep">
+								Home internet access</br>
+									<select name="internet" id="internet" required>
+							    	<option value=""> Choose </option>
+							        <option value="yes">Yes</option>
+							        <option value="no">No</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-12-mobilep">
+								In romantic relationship</br>
+									<select name="romantic" id="romantic" required>
+							    	<option value=""> Choose </option>
+							        <option value="yes">Yes</option>
+							        <option value="no">No</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Family relationship<br>
+									<select name="famrel" id="famrel" required>
+							    	<option value=""> Choose </option>
+							        <option value="1">Very Low</option>
+							        <option value="2">Low</option>
+							        <option value="3">Average</option>
+							        <option value="4">High</option>
+								    <option value="5">Very high</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Free time<br>
+									<select name="freetime" id="freetime" required>
+							    	<option value=""> Choose </option>
+							        <option value="1">Very Low</option>
+							        <option value="2">Low</option>
+							        <option value="3">Average</option>
+							        <option value="4">High</option>
+								    <option value="5">Very high</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Go out?<br>
+									<select name="goout" id="goout" required>
+							    	<option value=""> Choose </option>
+							        <option value="1">Very Low</option>
+							        <option value="2">Low</option>
+							        <option value="3">Average</option>
+							        <option value="4">High</option>
+								    <option value="5">Very high</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Weekday Alcohol<br>
+									<select name="Dalc" id="Dalc" required>
+							    	<option value=""> Choose </option>
+							        <option value="1">None</option>
+							        <option value="2">Little</option>
+							        <option value="3">Average</option>
+							        <option value="4">Much</option>
+
+							        <option value="5">Very much</option>
+							    </select>
+								</div>
+								
+								<div class="arrow col-6 col-6-mobilep">
+								Weekend Alcohol<br>
+									<select name="Walc" id="Walc" required>
+							    	<option value=""> Choose </option>
+							        <option value="1">None</option>
+							        <option value="2">Little</option>
+							        <option value="3">Average</option>
+							        <option value="4">Much</option>
+
+							        <option value="5">Very much</option>
+							    </select>
+								</div>
+								<div class="arrow col-6 col-6-mobilep">
+								Health</br>
+										<select name="health" id="health" required>
+							    	<option value=""> Choose </option>
+							        <option value="1">Very bad</option>
+							        <option value="2">Bad</option>
+							        <option value="3">Average</option>
+							        <option value="4">Good</option>
+								    <option value="5">Very good</option>
+							    </select>
+								</div>
+								<div class="col-12 col-12-mobilep">
+								No. of Absences</br>
+									<input type="number" name="absences" step="any" min="0" max="100" value="" placeholder=" no. of time absent" required/>
+								</div>
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="submit" value="Predict Performance" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+
+				</section>
+				
+
+
+			<!-- Posts -->
+				
+			<!-- Footer -->
+				<div style="background-color: #d3d4e0;" id="footer">
+					
+
+					
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy;   All rights reserved</li>
+							</ul>
+						</div>
+
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static', filename='assets/js/jquery.dropotron.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/browser.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/breakpoints.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/main.js')}}"></script>
+
+		</body>
+</html>
