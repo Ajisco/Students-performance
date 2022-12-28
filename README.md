@@ -53,9 +53,9 @@ The dataset was in a tabular (CSV) format and was gotten from kaggle [Here](http
 
 ## 📍 DEPLOYMENT 🚀
 
-#### This app is deployed at [Render](https://railway.app/)
+#### This app is deployed at [Render](https://render.com/)
 	
-#### You can access it [Here](https://studentfbi.up.railway.app/) <br><br><br>
+#### You can access it [Here](https://checkperform.onrender.com) <br><br><br>
 
 
 ## 📍 Limitations
