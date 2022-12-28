@@ -60,7 +60,8 @@ The dataset was in a tabular (CSV) format and was gotten from kaggle [Here](http
 
 ## 📍 Limitations
 1. The dataset used was not large enough, could be outdated and can't be said to have generalized well despite the high metric values.
-2. The app's interface could be better.<br><br><br>
+2. The app's interface could be better.
+3. Render makes it slow for the app to load.<br><br><br>
 
 ## 📍 To improve
 1. I would love to improve the dataset in size and quality.
