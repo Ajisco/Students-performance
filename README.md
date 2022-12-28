@@ -31,7 +31,7 @@ The dataset was in a tabular (CSV) format and was gotten from kaggle [Here](http
 
 ## 📍 APP VIEW
 
-#### [Student Performance Predictor](https://studentfbi.up.railway.app/)
+#### [Student Performance Predictor](https://checkperform.onrender.com)
 | | 
 |:-|
 | <img alt="Depressiion" src="https://github.com/Ajisco/Ajisco/blob/main/images/studentfbi.jpg">|
