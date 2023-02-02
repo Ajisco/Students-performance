@@ -72,7 +72,7 @@ The dataset was in a tabular (CSV) format and was gotten from kaggle [Here](http
 You can  create a pull request wit detailed explanation if you wiould love to work more on this, or contact me through:
 <p align="center">
 	<a href="https://github.com/Ajisco" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
-	<a href="https://bit.ly/ajibade_linkedin" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
+	<a href="https://www.linkedin.com/in/abdulquddusajibade" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
 	<a href="https://mobile.twitter.com/dayo_ajisco" target="_blank"><img src="https://img.icons8.com/twitter.png" alt="Twitter"/></a>
   <a href="https://instagram.com/Dayo_Ajisco" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram"/></a>
 	<a href="mailto:ajiscomorac@gmail.com" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail"/></a>
